@@ -1,0 +1,135 @@
+@import 'https://fonts.googleapis.com/css?family=Bangers|Oswald:300,400';
+
+/* Global settings 
+
+blue #3EC1D3
+beige #F6F7D7
+burnt orange #FF9A00
+nice pink #FF165D
+dark blue text #373A3C
+*/
+html, body {
+    
+    font-family: 'Oswald', 'Arial',  sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Bangers', cursive, serif;
+}
+
+h2 {
+    color: #104046;
+}
+
+section {
+    padding-top: 4rem
+}
+
+/* Nav */
+/*================*/
+#nav-bar {
+    background-color: #3EC1D3;
+    height: 3.5rem;
+}
+nav ul {
+    text-align: center;
+    text-transform: uppercase;
+}
+nav ul li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: #104046;
+    font-size: 1.5rem;
+    transition: font-size ease-out 0.5s, color ease-out 0.5s;
+    
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: none;
+    color: #f6f7d7;
+    font-size: 2rem;
+    transition: font-size ease-in 0.5s, color ease-in 0.5s;
+}
+
+
+/* About */
+/*================*/
+#about {
+    background-color: #3EC1D3;
+}
+
+#me img {
+    height: 20rem;
+    width: auto;
+}
+
+#logo {
+    position: relative;
+    height: 8rem;
+    width: 8rem;
+    background-color: #F6F7D7;
+    border: .5rem solid #FF9A00;
+    border-radius: 50%;
+    color: #FF165D;
+    font-size: 5rem;
+    padding-left: 0.6rem;
+    line-height: 7.5rem;
+    font-family: 'Bangers', cursive, serif;
+}
+
+#logo-name {
+    position: relative;
+    color: #FF9A00;
+    padding-top: 1rem;
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    line-height: 4.5rem;
+    font-family: 'Bangers', cursive, serif;
+    text-align: center;
+    text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #F6F7D7, 
+    2px 1px 1px #ccc, 1px 2px 1px #F6F7D7,
+    3px 2px 1px #ccc, 2px 3px 1px #F6F7D7,
+    4px 3px 1px #ccc, 3px 4px 1px #F6F7D7,
+    5px 4px 1px #ccc, 4px 5px 1px #F6F7D7,
+    6px 5px 1px #ccc, 5px 6px 1px #F6F7D7,
+    7px 6px 1px #ccc;
+}
+
+#logo-name span {
+    color: #FF165D;
+}
+
+#title {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/* Work */
+/*================*/
+#work {
+    background-color: #F6F7D7;   
+}
+
+.placeholder {
+    display:block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+/* Footer */
+/*================*/
+#footer {
+    background-color: black;
+}
