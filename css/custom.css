@@ -26,13 +26,13 @@ h2 {
 }
 
 section {
-    padding-top: 4rem
+    padding: 4rem 0 4rem 0;
 }
 
 /* Nav */
 /*================*/
 #nav-bar {
-    background-color: #3EC1D3;
+    background-color: rgba(62, 193, 211, 0.8);
     height: 3.5rem;
 }
 nav ul {
@@ -48,6 +48,7 @@ nav a:link,
 nav a:visited {
     color: #104046;
     font-size: 1.5rem;
+    -webkit-transition: font-size ease-out 0.5s, color ease-out 0.5s;
     transition: font-size ease-out 0.5s, color ease-out 0.5s;
     
 }
@@ -57,14 +58,20 @@ nav a:active {
     text-decoration: none;
     color: #f6f7d7;
     font-size: 2rem;
+    -webkit-transition: font-size ease-in 0.5s, color ease-in 0.5s;
     transition: font-size ease-in 0.5s, color ease-in 0.5s;
 }
 
 
 /* About */
 /*================*/
+section#about {
+    padding-bottom: 0;
+}
+
 #about {
     background-color: #3EC1D3;
+    background-attachment: fixed;
 }
 
 #me img {
@@ -117,19 +124,31 @@ nav a:active {
 /* Work */
 /*================*/
 #work {
-    background-color: #F6F7D7;   
+    background-color: #F6F7D7;
 }
 
-.placeholder {
-    display:block;
-    width: 10rem;
-    height: 10rem;
+.project img {
+    display: block;
+    width: 16rem;
+    height: 16rem;
     border-radius: 50%;
-    background-color: aqua;
+    border: 0.8rem solid #FF9A00;
+    margin-bottom: .8rem;
+    -webkit-transition: border-color ease-in 0.2s;
+    transition: border-color ease-in 0.2s;
+}
+
+.project img:hover {
+    border-color: #3EC1D3;
 }
 
 /* Footer */
 /*================*/
-#footer {
-    background-color: black;
+#contact {
+    background-color: #ff9a00;
+    text-align: center
+}
+
+#contact h2 {
+    color: #f6f7d7;
 }
