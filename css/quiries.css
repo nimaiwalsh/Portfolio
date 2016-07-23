@@ -1,0 +1,36 @@
+/*Extra small devices (portrait phones, less than 34em)*/
+@media screen and (max-width: 33.9em) { 
+    
+    html, body {
+        font-size: 16px;
+    }
+}
+
+/*Small devices (landscape phones, less than 48em)*/
+@media screen and (max-width: 47.9em) {
+    
+     #social ul li {
+        display: inline-block;
+        margin-right: 1.5rem;
+    }
+    
+}
+
+/*Medium devices (tablets, less than 62em)*/
+@media screen and (max-width: 61.9em) { 
+    
+    h2 {
+        padding-bottom: 1rem;
+    }
+    
+    #email {
+        font-size: 1.3rem;
+    }
+
+}
+
+/*Large devices (desktops, less than 75em)*/
+@media screen and (max-width: 74.9em) { 
+    
+}
+
