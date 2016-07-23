@@ -1,20 +1,21 @@
-@import 'https://fonts.googleapis.com/css?family=Bangers|Oswald:300,400';
-
-/* Global settings 
-
+/*
 blue #3EC1D3
 beige #F6F7D7
 burnt orange #FF9A00
 nice pink #FF165D
 dark blue text #373A3C
 */
+
+@import 'https://fonts.googleapis.com/css?family=Bangers|Oswald:300,400';
+
+/* Global settings */
+/*====================*/
 html, body {
     
     font-family: 'Oswald', 'Arial',  sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
-    
 }
 
 h1, h2, h3 {
@@ -22,11 +23,31 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: #104046;
+    color: #3ec1d3;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    color: #3ec1d3;
+    font-size: 1.5rem;
+    letter-spacing: .07rem;
 }
 
 section {
     padding: 4rem 0 4rem 0;
+}
+
+a:link,
+a:visited {
+    color: #ff165d; 
+    text-decoration: none;
+}
+
+a:hover, 
+a:active {
+    text-decoration: none;
+    color: #3ec1d3;
 }
 
 /* Nav */
@@ -40,8 +61,13 @@ nav ul {
     text-transform: uppercase;
 }
 nav ul li {
+    position: relative;
     display: inline-block;
-    padding: 1rem;
+    padding: 0.6rem;
+}
+
+nav ul li i {
+    margin-left: 0.2rem;
 }
 
 nav a:link,
@@ -72,6 +98,14 @@ section#about {
 #about {
     background-color: #3EC1D3;
     background-attachment: fixed;
+}
+
+#about p {
+    color: #373A3C;
+    font-family: 'Bangers', cursive, serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .1rem;
 }
 
 #me img {
@@ -142,7 +176,12 @@ section#about {
     border-color: #3EC1D3;
 }
 
-/* Footer */
+.project-content {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+/* Contact */
 /*================*/
 #contact {
     background-color: #ff9a00;
@@ -151,4 +190,14 @@ section#about {
 
 #contact h2 {
     color: #f6f7d7;
+}
+
+#email {
+    font-size: 2rem;
+}
+
+#social ul li {
+    list-style: none;
+    font-size: 2rem
+    
 }
