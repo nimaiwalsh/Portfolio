@@ -6,7 +6,7 @@ nice pink #FF165D
 dark blue text #373A3C
 */
 
-@import 'https://fonts.googleapis.com/css?family=Bangers|Oswald:300,400';
+@import url('https://fonts.googleapis.com/css?family=Bangers|Oswald:300,400');
 
 /* Global settings */
 /*====================*/
@@ -25,7 +25,19 @@ h1, h2, h3 {
 h2 {
     color: #3ec1d3;
     text-align: center;
-    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+h2:after {
+    display: block;
+    height: .4rem;
+    width: 20rem;
+    background-color: #ff9a00;
+    border-radius: 50%;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 1rem;
+    
 }
 
 h3 {
@@ -190,6 +202,12 @@ section#about {
 
 #contact h2 {
     color: #f6f7d7;
+    margin-bottom: 1rem;
+}
+
+#contact h2:after {
+    background-color: #f6f7d7;
+    width: 4rem;
 }
 
 #email {
